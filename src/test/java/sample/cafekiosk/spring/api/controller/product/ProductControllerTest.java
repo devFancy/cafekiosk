@@ -57,7 +57,7 @@ class ProductControllerTest {
                 )
                 .andDo(print()) // log 확인
                 .andExpect(status().isOk());
-     }
+    }
     @DisplayName("신규 상품을 등록할 때 상품 타입은 필수이다.")
     @Test
     void createProductWithoutType() throws Exception {
