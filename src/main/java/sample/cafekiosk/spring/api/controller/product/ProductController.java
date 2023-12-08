@@ -18,7 +18,7 @@ public class ProductController {
     private final ProductService productService;
 
     @PostMapping("/api/v1/products/new")
-    public ProductResponse createProduct(ProductCreateRequest request) {
+    public ProductResponse createProduct(@RequestBody ProductCreateRequest request) {
         return productService.createProduct(request);
 
     }

@@ -8,6 +8,7 @@ import sample.cafekiosk.spring.domain.product.ProductSellingStatus;
 import sample.cafekiosk.spring.domain.product.ProductType;
 
 @Getter
+@NoArgsConstructor
 public class ProductCreateRequest {
 
     private String productNumber;
