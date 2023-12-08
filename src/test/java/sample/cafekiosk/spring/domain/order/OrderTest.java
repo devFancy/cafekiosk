@@ -1,6 +1,5 @@
 package sample.cafekiosk.spring.domain.order;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import sample.cafekiosk.spring.domain.product.Product;
