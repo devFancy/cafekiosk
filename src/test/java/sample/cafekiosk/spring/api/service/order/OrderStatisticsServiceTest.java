@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ActiveProfiles;
+import sample.cafekiosk.spring.IntegrationTestSupport;
 import sample.cafekiosk.spring.client.mail.MailSendClient;
 import sample.cafekiosk.spring.domain.history.mail.MailSendHistory;
 import sample.cafekiosk.spring.domain.history.mail.MailSendHistoryRepository;
@@ -31,9 +32,7 @@ import static org.mockito.Mockito.when;
 import static sample.cafekiosk.spring.domain.product.ProductSellingStatus.SELLING;
 import static sample.cafekiosk.spring.domain.product.ProductType.HANDMADE;
 
-@ActiveProfiles("test")
-@SpringBootTest
-class OrderStatisticsServiceTest {
+class OrderStatisticsServiceTest extends IntegrationTestSupport {
 
     @Autowired
     private OrderStatisticsService orderStatisticsService;
@@ -49,9 +48,6 @@ class OrderStatisticsServiceTest {
 
     @Autowired
     private MailSendHistoryRepository mailSendHistoryRepository;
-
-    @MockBean
-    private MailSendClient mailSendClient;
 
     @AfterEach
     void tearDown() {
