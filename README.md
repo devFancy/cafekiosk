@@ -2,6 +2,10 @@
 
 * 해당 강의를 통해 실무에서 개발하는 방식 그대로, 깔끔하고 명료한 테스트 코드를 작성하는 방법을 배운다.
 
+> 해당 강의를 듣고 실습하면서 정리한 포스팅입니다.
+- [Practical Testing: 테스트 코드 작성 방법](https://devfancy.github.io/Practical-Testing/)
+- [Practical Testing: 테스트 코드 작성 방법 - Mock, 더 나은 테스트를 위한 구체적 조언](https://devfancy.github.io/Practical-Testing2/)
+
 ## 학습 대상
 
 * 테스트 코드가 왜 필요한지 궁금한 분들
